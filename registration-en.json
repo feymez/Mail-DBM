@@ -1,0 +1,179 @@
+{
+    "name": "registration",
+    "permissions": "NONE",
+    "permissions2": "NONE",
+    "restriction": "1",
+    "_id": "zGyBw",
+    "actions": [
+      {
+        "member": "1",
+        "varName": "",
+        "role": "101",
+        "varName2": "MAIL-ROLE-ID",
+        "branch": {
+          "iftrue": "0",
+          "iffalse": "2",
+          "iffalseVal": "4"
+        },
+        "name": "Check If Member has Role"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "",
+        "buttons": [],
+        "selectMenus": [],
+        "attachments": [],
+        "embeds": [
+          {
+            "title": "",
+            "url": "",
+            "color": "ff0000",
+            "timestamp": "false",
+            "imageUrl": "",
+            "thumbUrl": "",
+            "description": "**You are already registered.**",
+            "fields": [],
+            "author": "",
+            "authorUrl": "",
+            "authorIcon": "",
+            "footerText": "",
+            "footerIconUrl": ""
+          }
+        ],
+        "reply": true,
+        "ephemeral": true,
+        "tts": false,
+        "overwrite": false,
+        "dontSend": false,
+        "editMessage": "0",
+        "editMessageVarName": "",
+        "storage": "0",
+        "varName2": "",
+        "name": "Send Message"
+      },
+      {
+        "name": "End Action Sequence"
+      },
+      {
+        "channel": "1",
+        "varName": "",
+        "message": "",
+        "buttons": [],
+        "selectMenus": [],
+        "attachments": [],
+        "embeds": [
+          {
+            "title": "Your account has been registered!",
+            "url": "",
+            "color": "933198",
+            "timestamp": "true",
+            "imageUrl": "",
+            "thumbUrl": "",
+            "description": "Welcome to our mail system!\n\nYou will find your login details below. They are hidden so that someone does not accidentally see them. Click on the dark fields to reveal the data.\n\nUser Name: ||${slashParams(\"Name\")}||\n\nPassword: ||${slashParams(\"Password\")}||",
+            "fields": [],
+            "author": "",
+            "authorUrl": "",
+            "authorIcon": "",
+            "footerText": "",
+            "footerIconUrl": ""
+          }
+        ],
+        "reply": true,
+        "ephemeral": false,
+        "tts": false,
+        "overwrite": false,
+        "dontSend": false,
+        "editMessage": "0",
+        "editMessageVarName": "",
+        "storage": "0",
+        "varName2": "",
+        "name": "Send Message"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "",
+        "buttons": [],
+        "selectMenus": [],
+        "attachments": [],
+        "embeds": [
+          {
+            "title": "",
+            "url": "",
+            "color": "0cf049",
+            "timestamp": "false",
+            "imageUrl": "",
+            "thumbUrl": "",
+            "description": "**Successfully registered.**",
+            "fields": [],
+            "author": "",
+            "authorUrl": "",
+            "authorIcon": "",
+            "footerText": "",
+            "footerIconUrl": ""
+          }
+        ],
+        "reply": true,
+        "ephemeral": true,
+        "tts": false,
+        "overwrite": false,
+        "dontSend": false,
+        "editMessage": "0",
+        "editMessageVarName": "",
+        "storage": "0",
+        "varName2": "",
+        "name": "Send Message"
+      },
+      {
+        "member": "1",
+        "varName2": "",
+        "role": "101",
+        "varName": "MAIL-ROLE-ID",
+        "reason": "Registration in the e-mail system.",
+        "name": "Add Member Role"
+      },
+      {
+        "member": "1",
+        "varName2": "",
+        "role": "101",
+        "varName": "LOGGED-ROLE-ID",
+        "reason": "Registration in the e-mail system.",
+        "name": "Add Member Role"
+      },
+      {
+        "member": "1",
+        "varName": "",
+        "dataName": "name",
+        "changeType": "0",
+        "value": "slashParams(\"Name\")",
+        "name": "Control Member Data"
+      },
+      {
+        "member": "1",
+        "varName": "",
+        "dataName": "password",
+        "changeType": "0",
+        "value": "slashParams(\"Password\")",
+        "name": "Control Member Data"
+      }
+    ],
+    "comType": "4",
+    "description": "Register with the mail.",
+    "parameters": [
+      {
+        "name": "Name",
+        "description": "Please enter your username",
+        "type": "STRING",
+        "required": true,
+        "choices": null
+      },
+      {
+        "name": "Password",
+        "description": "Enter a password for your account",
+        "type": "STRING",
+        "required": true,
+        "choices": null
+      }
+    ]
+  }

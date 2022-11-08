@@ -1,0 +1,179 @@
+{
+    "name": "rejestracja",
+    "permissions": "NONE",
+    "permissions2": "NONE",
+    "restriction": "1",
+    "_id": "ZdPFh",
+    "actions": [
+      {
+        "member": "1",
+        "varName": "",
+        "role": "101",
+        "varName2": "ID-ROLI-MAIL",
+        "branch": {
+          "iftrue": "0",
+          "iffalse": "2",
+          "iffalseVal": "4"
+        },
+        "name": "Check If Member has Role"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "",
+        "buttons": [],
+        "selectMenus": [],
+        "attachments": [],
+        "embeds": [
+          {
+            "title": "",
+            "url": "",
+            "color": "ff0000",
+            "timestamp": "false",
+            "imageUrl": "",
+            "thumbUrl": "",
+            "description": "**Jesteś już zarejestrowany.**",
+            "fields": [],
+            "author": "",
+            "authorUrl": "",
+            "authorIcon": "",
+            "footerText": "",
+            "footerIconUrl": ""
+          }
+        ],
+        "reply": true,
+        "ephemeral": true,
+        "tts": false,
+        "overwrite": false,
+        "dontSend": false,
+        "editMessage": "0",
+        "editMessageVarName": "",
+        "storage": "0",
+        "varName2": "",
+        "name": "Send Message"
+      },
+      {
+        "name": "End Action Sequence"
+      },
+      {
+        "channel": "1",
+        "varName": "",
+        "message": "",
+        "buttons": [],
+        "selectMenus": [],
+        "attachments": [],
+        "embeds": [
+          {
+            "title": "Twoje konto zostało zarejestrowane!",
+            "url": "",
+            "color": "933198",
+            "timestamp": "true",
+            "imageUrl": "",
+            "thumbUrl": "",
+            "description": "Witamy Cię w naszym systemie pocztowym!\n\nPoniżje znajdziesz dane logowania. Są ukryte aby ktoś przypadkiem ich nie zobaczył. Kliknij na ciemne pola aby odsłonić dane.\n\nNazwa użytkownika: ||${slashParams(\"Nazwa\")}||\n\nHasło: ||${slashParams(\"Haslo\")}||",
+            "fields": [],
+            "author": "",
+            "authorUrl": "",
+            "authorIcon": "",
+            "footerText": "",
+            "footerIconUrl": ""
+          }
+        ],
+        "reply": true,
+        "ephemeral": false,
+        "tts": false,
+        "overwrite": false,
+        "dontSend": false,
+        "editMessage": "0",
+        "editMessageVarName": "",
+        "storage": "0",
+        "varName2": "",
+        "name": "Send Message"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "",
+        "buttons": [],
+        "selectMenus": [],
+        "attachments": [],
+        "embeds": [
+          {
+            "title": "",
+            "url": "",
+            "color": "0cf049",
+            "timestamp": "false",
+            "imageUrl": "",
+            "thumbUrl": "",
+            "description": "**Pomyślnie zarejestrowano.**",
+            "fields": [],
+            "author": "",
+            "authorUrl": "",
+            "authorIcon": "",
+            "footerText": "",
+            "footerIconUrl": ""
+          }
+        ],
+        "reply": true,
+        "ephemeral": true,
+        "tts": false,
+        "overwrite": false,
+        "dontSend": false,
+        "editMessage": "0",
+        "editMessageVarName": "",
+        "storage": "0",
+        "varName2": "",
+        "name": "Send Message"
+      },
+      {
+        "member": "1",
+        "varName2": "",
+        "role": "101",
+        "varName": "ID-ROLI-MAIL",
+        "reason": "Rejestracja w systemie mailowym.",
+        "name": "Add Member Role"
+      },
+      {
+        "member": "1",
+        "varName2": "",
+        "role": "101",
+        "varName": "ID-ROLI-ZALOGOWANY",
+        "reason": "Rejestracja w systemie mailowym.",
+        "name": "Add Member Role"
+      },
+      {
+        "member": "1",
+        "varName": "",
+        "dataName": "nazwa",
+        "changeType": "0",
+        "value": "slashParams(\"Nazwa\")",
+        "name": "Control Member Data"
+      },
+      {
+        "member": "1",
+        "varName": "",
+        "dataName": "haslo",
+        "changeType": "0",
+        "value": "slashParams(\"Haslo\")",
+        "name": "Control Member Data"
+      }
+    ],
+    "comType": "4",
+    "description": "Zarejestruj się w poczcie",
+    "parameters": [
+      {
+        "name": "Nazwa",
+        "description": "Wprowadź nazwę użytkownika",
+        "type": "STRING",
+        "required": true,
+        "choices": null
+      },
+      {
+        "name": "Haslo",
+        "description": "Wprowadź hasło dla swojego konta",
+        "type": "STRING",
+        "required": true,
+        "choices": null
+      }
+    ]
+  }
