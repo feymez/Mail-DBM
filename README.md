@@ -85,3 +85,10 @@ Action #1 - Paste the ID of the role "Logged out" <br>
 Action #4 - Paste the ID of the role "Logged" <br>
 Action #8 - Paste the ID of the role "Logged" <br>
 Action #9 - Paste the ID of the role "Logged out" <br>
+
+#### Command /mailon <br>
+Copy the data from the mailon-en.json file and paste it as rawdate into Discord Bot Maker <br>
+
+Action #1 - We paste the ID of the role "Mail ON" <br>
+Action #4 - We paste the ID of the role "Mail ON" <br>
+Action #5 - We paste the ID of the role "Mail OFF" <br>
