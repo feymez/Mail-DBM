@@ -58,3 +58,16 @@ Skopiuj dane z pliku mail-pl.json i wklej jako rawdate do programu Discord Bot M
 
 Akcja #1 - Wklejamy ID roli "Mail ON"
 Akcja #4 - Wklejamy ID roli "Mail"
+
+# Mail-DBM
+
+## Discord Bot Maker Email System ~ feymez <br>
+
+For everything to work, you need to create 5 roles first. Give the names you want important for you to recognize them. You will need:
+  - Mail ON
+  - Mail OFF
+  - Mail
+  - Logged
+  - Logged out
+
+#### Command /login <br>
