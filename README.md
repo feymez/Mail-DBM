@@ -92,3 +92,30 @@ Copy the data from the mailon-en.json file and paste it as rawdate into Discord 
 Action #1 - We paste the ID of the role "Mail ON" <br>
 Action #4 - We paste the ID of the role "Mail ON" <br>
 Action #5 - We paste the ID of the role "Mail OFF" <br>
+
+#### Command /mailoff <br>
+Copy the data from the mailoff-en.json file and paste it as rawdate into Discord Bot Maker <br>
+
+Action #1 - We paste the ID of the role "Mail OFF" <br>
+Action #4 - We paste the ID of the role "Mail OFF" <br>
+Action #5 - We paste the ID of the role "Mail ON" <br>
+
+#### Command /registration <br>
+Copy the data from the registration-en.json file and paste it as rawdate into Discord Bot Maker <br>
+
+Action #1 - We paste the ID of the role "Mail" <br>
+Action #6 - We paste the ID of the role "Mail" <br>
+Action #7 - We paste the ID of the role "Logged" <br>
+
+#### Command /delete <br>
+Copy the data from the delete-en.json file and paste it as rawdate into Discord Bot Maker <br>
+
+Action #3 - We paste the ID of the role "Logged" <br>
+Action #14 - We paste the ID of the role "Mail" <br>
+Action #15 - We paste the ID of the role "Logged" <br>
+
+#### Command /mail
+Copy the data from the mail-en.json file and paste it as rawdate into Discord Bot Maker <br>
+
+Action #1 - We paste the ID of the role "Mail ON" <br>
+Action #4 - We paste the ID of the role "Mail" <br>
