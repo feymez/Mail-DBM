@@ -20,44 +20,44 @@ Akcja #17 - Wklejamy ID roli "Zalogowany" <br>
 #### Komenda /wyloguj <br>
 Skopiuj dane z pliku logout-pl.json i wklej jako rawdate do programu Discord Bot Maker <br>
 
-Akcja #1 - Wklejamy ID roli "Wylogowany"
-Akcja #4 - Wklejamy ID roli "Zalogowany"
-Akcja #8 - Wklejamy ID roli "Zalogowany"
-Akcja #9 - Wklejamy ID roli "Wylogowany"
+Akcja #1 - Wklejamy ID roli "Wylogowany" <br>
+Akcja #4 - Wklejamy ID roli "Zalogowany" <br>
+Akcja #8 - Wklejamy ID roli "Zalogowany" <br>
+Akcja #9 - Wklejamy ID roli "Wylogowany" <br>
 
 #### Komenda /mailon <br>
 Skopiuj dane z pliku mailon-pl.json i wklej jako rawdate do programu Discord Bot Maker <br>
 
-Akcja #1 - Wklejamy ID roli "Mail ON"
-Akcja #4 - Wklejamy ID roli "Mail ON"
-Akcja #5 - Wklejamy ID roli "Mail OFF"
+Akcja #1 - Wklejamy ID roli "Mail ON" <br>
+Akcja #4 - Wklejamy ID roli "Mail ON" <br>
+Akcja #5 - Wklejamy ID roli "Mail OFF" <br>
 
 #### Komenda /mailoff <br>
 Skopiuj dane z pliku mailoff-pl.json i wklej jako rawdate do programu Discord Bot Maker <br>
 
-Akcja #1 - Wklejamy ID roli "Mail OFF"
-Akcja #4 - Wklejamy ID roli "Mail OFF"
-Akcja #5 - Wklejamy ID roli "Mail ON"
+Akcja #1 - Wklejamy ID roli "Mail OFF" <br>
+Akcja #4 - Wklejamy ID roli "Mail OFF" <br>
+Akcja #5 - Wklejamy ID roli "Mail ON" <br>
 
 #### Komenda /rejestracja <br>
 Skopiuj dane z pliku registration-pl.json i wklej jako rawdate do programu Discord Bot Maker <br>
 
-Akcja #1 - Wklejamy ID roli "Mail"
-Akcja #6 - Wklejamy ID roli "Mail"
-Akcja #7 - Wklejamy ID roli "Zalogowany"
+Akcja #1 - Wklejamy ID roli "Mail" <br>
+Akcja #6 - Wklejamy ID roli "Mail" <br>
+Akcja #7 - Wklejamy ID roli "Zalogowany" <br>
 
 #### Komenda /usun <br>
 Skopiuj dane z pliku delete-pl.json i wklej jako rawdate do programu Discord Bot Maker <br>
 
-Akcja #3 - Wklejamy ID roli "Zalogowany"
-Akcja #14 - Wklejamy ID roli "Mail"
-Akcja #15 - Wklejamy ID roli "Zalogowany"
+Akcja #3 - Wklejamy ID roli "Zalogowany" <br>
+Akcja #14 - Wklejamy ID roli "Mail" <br>
+Akcja #15 - Wklejamy ID roli "Zalogowany" <br>
 
 #### Komenda /mail <br>
 Skopiuj dane z pliku mail-pl.json i wklej jako rawdate do programu Discord Bot Maker <br>
 
-Akcja #1 - Wklejamy ID roli "Mail ON"
-Akcja #4 - Wklejamy ID roli "Mail"
+Akcja #1 - Wklejamy ID roli "Mail ON" <br>
+Akcja #4 - Wklejamy ID roli "Mail" <br>
 
 # Mail-DBM
 
