@@ -1,0 +1,248 @@
+{
+    "name": "mail",
+    "permissions": "NONE",
+    "permissions2": "NONE",
+    "restriction": "1",
+    "_id": "CsWnZ",
+    "actions": [
+      {
+        "member": "5",
+        "varName": "Adresat",
+        "role": "101",
+        "varName2": "ID-ROLI-MAIL-ON",
+        "branch": {
+          "iftrue": "2",
+          "iffalse": "0",
+          "iftrueVal": "4"
+        },
+        "name": "Check If Member has Role"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "",
+        "buttons": [],
+        "selectMenus": [],
+        "attachments": [],
+        "embeds": [
+          {
+            "title": "",
+            "url": "",
+            "color": "ff0000",
+            "timestamp": "false",
+            "imageUrl": "",
+            "thumbUrl": "",
+            "description": "**Użytkownik wyłączył swoją skrzynke odbiorczą.**",
+            "fields": [],
+            "author": "",
+            "authorUrl": "",
+            "authorIcon": "",
+            "footerText": "",
+            "footerIconUrl": ""
+          }
+        ],
+        "reply": true,
+        "ephemeral": true,
+        "tts": false,
+        "overwrite": false,
+        "dontSend": false,
+        "editMessage": "0",
+        "editMessageVarName": "",
+        "storage": "0",
+        "varName2": "",
+        "name": "Send Message"
+      },
+      {
+        "name": "End Action Sequence"
+      },
+      {
+        "member": "5",
+        "varName": "Adresat",
+        "role": "101",
+        "varName2": "ID-ROLI-MAIL",
+        "branch": {
+          "iftrue": "2",
+          "iffalse": "0",
+          "iftrueVal": "7"
+        },
+        "name": "Check If Member has Role"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "",
+        "buttons": [],
+        "selectMenus": [],
+        "attachments": [],
+        "embeds": [
+          {
+            "title": "",
+            "url": "",
+            "color": "ff0000",
+            "timestamp": "false",
+            "imageUrl": "",
+            "thumbUrl": "",
+            "description": "**Brak adresata w bazie danych użytkowników.**",
+            "fields": [],
+            "author": "",
+            "authorUrl": "",
+            "authorIcon": "",
+            "footerText": "",
+            "footerIconUrl": ""
+          }
+        ],
+        "reply": true,
+        "ephemeral": true,
+        "tts": false,
+        "overwrite": false,
+        "dontSend": false,
+        "editMessage": "0",
+        "editMessageVarName": "",
+        "storage": "0",
+        "varName2": "",
+        "name": "Send Message"
+      },
+      {
+        "name": "End Action Sequence"
+      },
+      {
+        "member": "5",
+        "varName": "Adresat",
+        "info": "1",
+        "storage": "1",
+        "varName2": "mentioned_user_id",
+        "name": "Store Member Info"
+      },
+      {
+        "member": "1",
+        "varName": "",
+        "info": "1",
+        "storage": "1",
+        "varName2": "command_user_id",
+        "name": "Store Member Info"
+      },
+      {
+        "member": "1",
+        "varName": "",
+        "info": "16",
+        "storage": "1",
+        "varName2": "member_avatar_url",
+        "name": "Store Member Info"
+      },
+      {
+        "member": "1",
+        "varName": "",
+        "info": "21",
+        "storage": "1",
+        "varName2": "member_tag",
+        "name": "Store Member Info"
+      },
+      {
+        "title": "Wyślij maila",
+        "textInputs": [
+          {
+            "name": "Tytuł",
+            "placeholder": "Wpisz tytuł swojej wiadomości...",
+            "minLength": "5",
+            "maxLength": "25",
+            "id": "title",
+            "row": "",
+            "style": "SHORT",
+            "required": "true"
+          },
+          {
+            "name": "Wiadomość",
+            "placeholder": "Wpisz tutaj swoją wiadomość...",
+            "minLength": "5",
+            "maxLength": "1000",
+            "id": "message",
+            "row": "",
+            "style": "PARAGRAPH",
+            "required": "true"
+          }
+        ],
+        "name": "Show Modal"
+      },
+      {
+        "channel": "8",
+        "varName": "Adresat",
+        "message": "",
+        "buttons": [],
+        "selectMenus": [],
+        "attachments": [],
+        "embeds": [
+          {
+            "title": "${tempVars(\"title\")}",
+            "url": "",
+            "color": "933198",
+            "timestamp": "true",
+            "imageUrl": "",
+            "thumbUrl": "",
+            "description": "${tempVars(\"message\")}",
+            "fields": [],
+            "author": "${tempVars(\"member_tag\")}",
+            "authorUrl": "",
+            "authorIcon": "${tempVars(\"member_avatar_url\")}",
+            "footerText": "",
+            "footerIconUrl": ""
+          }
+        ],
+        "reply": true,
+        "ephemeral": false,
+        "tts": false,
+        "overwrite": false,
+        "dontSend": false,
+        "editMessage": "0",
+        "editMessageVarName": "",
+        "storage": "0",
+        "varName2": "",
+        "name": "Send Message"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "",
+        "buttons": [],
+        "selectMenus": [],
+        "attachments": [],
+        "embeds": [
+          {
+            "title": "",
+            "url": "",
+            "color": "0cf049",
+            "timestamp": "false",
+            "imageUrl": "",
+            "thumbUrl": "",
+            "description": "**Pomyślnie wysłano maila.**",
+            "fields": [],
+            "author": "",
+            "authorUrl": "",
+            "authorIcon": "",
+            "footerText": "",
+            "footerIconUrl": ""
+          }
+        ],
+        "reply": true,
+        "ephemeral": true,
+        "tts": false,
+        "overwrite": false,
+        "dontSend": false,
+        "editMessage": "0",
+        "editMessageVarName": "",
+        "storage": "0",
+        "varName2": "",
+        "name": "Send Message"
+      }
+    ],
+    "comType": "4",
+    "description": "Wyślij maila",
+    "parameters": [
+      {
+        "name": "Adresat",
+        "description": "Wybierz adresata wiadomości.",
+        "type": "USER",
+        "required": true,
+        "choices": null
+      }
+    ]
+  }
