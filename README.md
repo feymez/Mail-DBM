@@ -2,12 +2,12 @@
 
 ## System mailowy Discord Bot Maker ~ feymez <br>
 
-Aby wszystko działało musisz pierw utworzyć 5 ról. Nazwy daj jakie chcesz ważne abyś je rozpoznawał. Będziesz potrzebować: <br>
-  - Mail NO
-  - Mail OFF
-  - Mail
-  - Zalogowany
-  - Wylogowany
+### Aby wszystko działało musisz pierw utworzyć 5 ról. Nazwy daj jakie chcesz ważne abyś je rozpoznawał. Będziesz potrzebować: <br>
+>  - Mail NO
+>  - Mail OFF
+>  - Mail
+>  - Zalogowany
+>  - Wylogowany
 
 #### Komenda /zaloguj <br>
 Skopiuj dane z pliku login-pl.json i wklej jako rawdate do programu Discord Bot Maker <br>
